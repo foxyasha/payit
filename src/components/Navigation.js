@@ -5,6 +5,7 @@ import {auth} from "./UI/firebaseConfig";
 import {useNavigate} from "react-router-dom";
 import {useAuthState} from "react-firebase-hooks/auth";
 import "./styles/Navigation.css"
+import {Navbar} from "react-bootstrap";
 
 const Navigation = () => {
     const navigate = useNavigate();
@@ -42,8 +43,10 @@ const Navigation = () => {
     return (
         <div className="nave">
             <div className="navigate">
-                <div className="typewriter-logo">
+                <div className="typewriter-logo" >
+                    <Navbar.Brand href="/store" >
                     <h1>Payit</h1>
+                    </Navbar.Brand>
                 </div>
                 <a className="menu">
                     <span className="menu-title">Account</span>
