@@ -6,7 +6,6 @@ import '../../App.css'
 import { auth, sendPasswordReset } from "../UI/firebaseConfig";
 import { useAuthState } from "react-firebase-hooks/auth";
 
-
 function Reset() {
 
     const [email, setEmail] = useState("");
@@ -32,7 +31,7 @@ function Reset() {
                                        required />
                             </p>
                             <p>
-                                <button id="sub_btn" onClick={() => sendPasswordReset(email)}>Reset password</button>
+                                <button id="sub_btn" type="button" onClick={() => sendPasswordReset(email)}>Reset password</button>
                             </p>
                         </form >
                         <footer>

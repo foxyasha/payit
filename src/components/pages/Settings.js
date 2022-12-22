@@ -38,7 +38,7 @@ const Store = () => {
                                placeholder="Enter email..." value={email} onChange={(e) => setEmail(e.target.value)}
                                className="form-control" required/>
                         <hr/>
-                        <button className="resetbutton" onClick={() => sendPasswordReset(email)}  >Reset password</button>
+                        <button className="resetbutton" type="button" onClick={() => sendPasswordReset(email)}  >Reset password</button>
                     </form>
                 </div>
             </div>
